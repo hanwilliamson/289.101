@@ -1,0 +1,22 @@
+.important {
+    color: #006326;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+#box1 {
+    background-color: lightgrey;
+    border: 10px solid #006326;
+    height: 100px;
+    margin: 50px 0 0 10px;
+    width: 200px;
+    padding: 10px 0 0 10px;
+}
+#box2 {
+    background-color: lightgrey;
+    border: 10px solid #006326;
+    height: 100px;
+    margin: 50px 0 0 10px;
+    width: 200px;
+    padding: 10px 0 0 10px;
+}
