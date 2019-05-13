@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>DOM scripting</title>
+        <style>
+            #red {
+                background-color: indianred;
+            }
+            #blue {
+                background-color: lightskyblue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="red">
+            this is a red div
+        </div>
+        <div id="blue">
+            this is a blue div
+        </div>
+        <button id="red_to_green">make it green</button>
+        <button id="green_to_red">make it red</button>
+        <button id="showx">show x</button>
+        
+        <script>
+            var x = 1;
+            
+            document.getElementById('showx').addEventListener(
+            'click', function(){
+                x += 1;
+                console.log(x);
+            });
+            
+            document.getElementById('red_to_green').addEventListener(
+            'click', function(){
+                var reddiv = document.getElementById("red");
+                reddiv.style.backgroundColor = "mediumseagreen";
+            });
+            
+            document.getElementById('green_to_red').addEventListener(
+            'click', function(){
+                var reddiv = document.getElementById("red");
+                reddiv.style.backgroundColor = "indianred";
+            });
+        </script>
+    </body>
+
+</html>
